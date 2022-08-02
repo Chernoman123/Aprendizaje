@@ -1,0 +1,137 @@
+:root{
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: #36992d; 
+    --secundario: #206399bb; 
+    --gris: #878787; 
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border -box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+    font-size: 14px;
+    font-family: 'Palanquin', sans-serif;
+    background-image: url(../img/fondo-escritorio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    color: white;
+}
+ /* Tabla para hacer que 1rem = 10px */
+.titulo {
+    text-align: center;
+    font-size: 4rem;
+    color: rgba(67, 64, 255, 0.89);
+    
+}
+
+.titulo span {
+    font-size: 3rem;
+    color: black;
+    font-weight: 400;
+}
+
+.menu-bg {
+    background-color: var(--secundario);
+
+}
+
+.menu-principal {
+    
+    display: flex;
+    
+}
+
+.menu-principal a {
+    color: white;
+    font-weight: 400;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.menu-principal a:hover {
+    color: var(--oscuro);
+    background-color: rgba(236, 236, 34, 0.61);
+}
+
+.caja {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.caja-bg {
+    background-color: rgba( 0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja-bg h2 , .caja-bg p , .caja-bg a {
+    color: rgb(219, 13, 13) ;
+    text-decoration: none;
+}
+
+
+
+
+.titulo-bg { /* Foto del banner en el perfil
+    background-image: url(../img/perfil.jpg) */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 18rem;
+}
+
+.perfil-bg {
+
+}
+/* Tamano Menor */
+@media (max-width: 768px) {
+    .menu-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Tamano Tablet */
+@media (min-width: 768px) {
+    .menu-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Tamano Monitor */
+@media (min-width: 1140px) {
+    .menu-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Tamano mas pro */
+@media (min-width: 1400px) {
+    .menu-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
